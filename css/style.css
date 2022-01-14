@@ -10,6 +10,7 @@ body{
 main{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 /*-------------------------------------------
     Navigation-bar styles start from here 
@@ -89,4 +90,81 @@ article a{
 .logo img{
     margin-left: 20px;
 }
+
+/*-------------------------------------------
+    Popular collection styles start from here 
+------------------------------------------- */
+.container{
+    width: 1047px;
+    margin: 0 195px;
+}
+.popular-title{
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 15px 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    width: 315px;
+    height: 476px;
+}
+.product-info p{
+    color: #787885;
+    font-size: 14px;
+}
+.product-name{
+    font-weight: 500;
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+    margin-bottom: 0;
+}
+.price{
+    margin: 6px 0;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.rating{
+    display: flex;
+}
+.rating .fas{
+    font-size: 10px;
+    color: #FB8200;
+}
+.rating span{
+    margin-left: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #5E6366;
+}
+.see-more{
+    display: flex;
+    align-items: center;
+    color: #E02C6D;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+.see-more a{
+    text-decoration: none;
+    color: #E02C6D;
+    font-weight: bold;
+    font-size: 16px;
+}
+.see-more .fas{
+    margin-left: 8px;
+    font-size: 16px;
+}
+/* popular collection styles end here  */
 
