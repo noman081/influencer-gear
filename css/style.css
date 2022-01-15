@@ -33,7 +33,7 @@ nav{
 .nav-bar a{
     text-decoration: none;
     margin-right: 34px;
-    color: black;
+    color: #3A3A3A;
     font-size: 16px;
     font-weight: 600px;
 }
@@ -57,6 +57,7 @@ nav .fas{
     text-align: justify;
 }
 .start-journey h1{
+    text-align: left;
     font-size: 52px;
     margin-top: 0;
 }
@@ -265,6 +266,11 @@ footer{
         margin-left: 30px;
         order:2;
     }
+    .start-journey h1{
+        text-align: left;
+        font-size: 30px;
+        margin-top: 0;
+    }
     .link-button{
         margin: 0 20%;
     }
@@ -339,6 +345,11 @@ footer{
             text-align: justify;
             margin-left: 30px;
     
+        }
+        .start-journey h1{
+            text-align: left;
+            font-size: 40px;
+            margin-top: 50px;
         }
         .camera-image img{
             margin: 50px 0 50px 50px;
