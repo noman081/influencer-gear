@@ -199,7 +199,6 @@ footer{
         align-items: center;
         flex-direction: column;
         margin: 0;
-        /* margin-top: 17px; */
         background-color: rgb(238, 130, 197);
     }
     .nav-bar ul{
@@ -219,16 +218,16 @@ footer{
         margin:0;
         text-align: justify;
         margin-left: 30px;
-
+        order:2;
     }
     .link-button{
         margin: 0 20%;
     }
     .camera-image img{
         margin: 50px 0 50px 50px;
-        height: 200px;
-        width: 280px;
-                
+        height: 80%;
+        width: 80%;
+        order: 1;
     }
     .brand-logos{
         margin-top: 50px;
@@ -258,4 +257,50 @@ footer{
         display: flex;
         justify-content: center;
     }
+}
+/* -----------------------------
+        responsive for mobile  
+   -----------------------------*/
+    @media only screen and (min-width: 689px) and (max-width: 992px) {
+        body{
+            width: 100%;
+            
+        }
+        .start-journey{
+            width: 100%;
+            margin:0;
+            text-align: justify;
+            margin-left: 30px;
+    
+        }
+        .camera-image img{
+            margin: 50px 0 50px 50px;
+            height: 80%;
+            width: 80%;
+                    
+        }
+        .brand-logos{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-row-gap: 10px;
+            align-items: center;
+            width: 90%;
+            height: 90%;
+            padding: 10px;
+        }
+        .container{
+            width: 100%;
+        }
+        .products{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 30px;
+            margin: 0 4%;
+        }
+        .see-more{
+            display: flex;
+            justify-content: center;
+        }
 }
